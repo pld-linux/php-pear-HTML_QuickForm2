@@ -7,7 +7,7 @@ Summary:	%{_pearname} - PHP5 rewrite of HTML_QuickForm package
 Summary(pl.UTF-8):	%{_pearname} - przepisany do PHP5 pakiet HTML_QuickForm
 Name:		php-pear-%{_pearname}
 Version:	0.1.0
-Release:	2
+Release:	3
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
