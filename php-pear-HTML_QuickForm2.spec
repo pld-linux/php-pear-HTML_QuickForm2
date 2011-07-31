@@ -1,17 +1,16 @@
-%include	/usr/lib/rpm/macros.php
-%define		_status		alpha
+%define		_status		beta
 %define		_pearname	HTML_QuickForm2
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - PHP5 rewrite of HTML_QuickForm package
 Summary(pl.UTF-8):	%{_pearname} - przepisany do PHP5 pakiet HTML_QuickForm
 Name:		php-pear-%{_pearname}
-Version:	0.5.0
+Version:	0.6.0
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	e9e0bf38988167bd6d24b25a28d0e910
+# Source0-md5:	57c90a27047c5237b8d3ba2273b0698c
 URL:		http://pear.php.net/package/HTML_QuickForm2/
-BuildRequires:	php-pear-PEAR
 BuildRequires:	php-pear-PEAR >= 1:1.5.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
