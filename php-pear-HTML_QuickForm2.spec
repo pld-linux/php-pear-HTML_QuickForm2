@@ -1,19 +1,21 @@
-%define		_status		beta
-%define		_pearname	HTML_QuickForm2
+%define		subver		beta1
+%define		rel			1
+%define		status		beta
+%define		pearname	HTML_QuickForm2
 %include	/usr/lib/rpm/macros.php
-Summary:	%{_pearname} - PHP5 rewrite of HTML_QuickForm package
-Summary(pl.UTF-8):	%{_pearname} - przepisany do PHP5 pakiet HTML_QuickForm
-Name:		php-pear-%{_pearname}
-Version:	0.6.1
-Release:	1
+Summary:	%{pearname} - PHP5 rewrite of HTML_QuickForm package
+Summary(pl.UTF-8):	%{pearname} - przepisany do PHP5 pakiet HTML_QuickForm
+Name:		php-pear-%{pearname}
+Version:	2.0.0
+Release:	0.%{subver}.%{rel}
 License:	BSD
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	d3838a98fb04ad7ee026fe4fb646ca18
+Source0:	http://pear.php.net/get/%{pearname}-%{version}%{subver}.tgz
+# Source0-md5:	9255444a754c5ef5caf728c0d1c06631
 URL:		http://pear.php.net/package/HTML_QuickForm2/
 BuildRequires:	php-pear-PEAR >= 1:1.5.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php-pear
 Requires:	php-pear-HTML_Common2 >= 2.0.0-0.beta1
 Obsoletes:	php-pear-HTML_QuickForm2-tests
@@ -24,13 +26,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The package is expected to offer at least the same functionality as
 HTML_QuickForm and work with PHP5 E_STRICT setting.
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %description -l pl.UTF-8
 Pakiet ten w zamierzeniu ma dostarczyć taką samą funkcjonalność jak
 pakiet HTML_QuickForm oraz działać z ustawieniem E_STRICT PHP5.
 
-a klasa ma w PEAR status: %{_status}.
+a klasa ma w PEAR status: %{status}.
 
 %prep
 %pear_package_setup
@@ -55,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/HTML/QuickForm2
 %{php_pear_dir}/HTML/QuickForm2.php
 
-%{php_pear_dir}/data/%{_pearname}
+%{php_pear_dir}/data/%{pearname}
 
 %{_examplesdir}/%{name}-%{version}
