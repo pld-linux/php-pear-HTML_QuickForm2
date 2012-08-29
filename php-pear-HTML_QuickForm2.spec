@@ -1,5 +1,5 @@
 %define		subver		beta1
-%define		rel			1
+%define		rel			2
 %define		status		beta
 %define		pearname	HTML_QuickForm2
 %include	/usr/lib/rpm/macros.php
