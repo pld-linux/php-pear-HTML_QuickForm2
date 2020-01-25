@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	HTML_QuickForm2
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - PHP5 rewrite of HTML_QuickForm package
 Summary(pl.UTF-8):	%{pearname} - przepisany do PHP5 pakiet HTML_QuickForm
 Name:		php-pear-%{pearname}
